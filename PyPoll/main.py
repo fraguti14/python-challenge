@@ -2,7 +2,7 @@ import csv
 from collections import Counter
 
 # File path to the CSV data
-file_path = "election_data.csv"
+file_path = "Resources/election_data.csv"
 
 # Variables
 total_votes = 0
@@ -39,7 +39,7 @@ print(f"Winner: {winner}")
 print("-------------------------")
 
 # Text file
-with open("../analysis/election_results.txt", "w") as txtfile:
+with open("analysis/election_results.txt", "w") as txtfile:
     txtfile.write("Election Results\n")
     txtfile.write("-------------------------\n")
     txtfile.write(f"Total Votes: {total_votes}\n")
